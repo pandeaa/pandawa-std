@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects - Pandawa Studio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .project-card { transition: all 0.4s ease; position: relative; overflow: hidden; cursor: pointer; }
+    .project-card:hover { transform: scale(1.05); }
+    .vol-label {
+      position: absolute; top: 15px; left: 15px;
+      background: #fbbf24; color: black;
+      padding: 5px 14px; border-radius: 9999px;
+      font-size: 13px; font-weight: 700; z-index: 10;
+      text-transform: uppercase;
+    }
+    .modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.95); z-index: 1000; align-items: center; justify-content: center; }
+  </style>
+</head>
+<body class="bg-black text-white">
+
+  <nav class="fixed top-0 w-full bg-black/90 backdrop-blur-md z-50 border-b border-gray-800">
+    <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+      <h1 class="text-3xl font-bold">Pandawa Studio</h1>
+      <div class="space-x-8 text-lg">
+        <a href="index.html" class="hover:text-yellow-400">← Home</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="pt-24 pb-24 bg-zinc-950">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center mb-16">My Text Effect Projects (25)</h2>
+      
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+
+        <div class="project-card bg-zinc-900 rounded-3xl overflow-hidden" onclick="showPreview('https://i.ibb.co/0RSfjP2W/Heritage-editable-text-effect.jpg', 'Heritage Vector Editable Text Effect')">
+          <div class="vol-label">HERITAGE VOL.1</div>
+          <img src="https://i.ibb.co/0RSfjP2W/Heritage-editable-text-effect.jpg" class="w-full h-64 object-cover">
+          <div class="p-5"><h3 class="font-semibold">Heritage Vector Editable Text Effect</h3></div>
+        </div>
+
+        <div class="project-card bg-zinc-900 rounded-3xl overflow-hidden" onclick="showPreview('https://i.ibb.co/pvfcCFv9/Prestige-editable-text-effect.jpg', 'Prestige Vector Editable Text Effect')">
+          <div class="vol-label">PRESTIGE VOL.1</div>
+          <img src="https://i.ibb.co/pvfcCFv9/Prestige-editable-text-effect.jpg" class="w-full h-64 object-cover">
+          <div class="p-5"><h3 class="font-semibold">Prestige Vector Editable Text Effect</h3></div>
+        </div>
+
+        <div class="project-card bg-zinc-900 rounded-3xl overflow-hidden" onclick="showPreview('https://i.ibb.co/5h5J0ndx/Heritage-editable-text-effect.jpg', 'Heritage Vector Editable Text Effect')">
+          <div class="vol-label">HERITAGE VOL.2</div>
+          <img src="https://i.ibb.co/5h5J0ndx/Heritage-editable-text-effect.jpg" class="w-full h-64 object-cover">
+          <div class="p-5"><h3 class="font-semibold">Heritage Vector Editable Text Effect</h3></div>
+        </div>
+
+        <div class="project-card bg-zinc-900 rounded-3xl overflow-hidden" onclick="showPreview('https://i.ibb.co/RpMCQVR6/Prestige-text-editable-text-effect.jpg', 'Prestige Vector Editable Text Effect')">
+          <div class="vol-label">PRESTIGE VOL.2</div>
+          <img src="https://i.ibb.co/RpMCQVR6/Prestige-text-editable-text-effect.jpg" class="w-full h-64 object-cover">
+          <div class="p-5"><h3 class="font-semibold">Prestige Vector Editable Text Effect</h3></div>
+        </div>
+
+        <div class="project-card bg-zinc-900 rounded-3xl overflow-hidden" onclick="showPreview('https://i.ibb.co/V6QdgQP/Retro-Merry-Christmas-text-effect-Vintage-editable-holiday-typography-style.jpg', 'Merry Christmas Vector Editable Text Effect')">
+          <div class="vol-label">CHRISTMAS VOL.1</div>
+          <img src="https://i.ibb.co/V6QdgQP/Retro-Merry-Christmas-text-effect-Vintage-editable-holiday-typography-style.jpg" class="w-full h-64 object-cover">
+          <div class="p-5"><h3 class="font-semibold">Merry Christmas Vector Editable Text Effect</h3></div>
+        </div>
+
+        <div class="project-card bg-zinc-900 rounded-3xl overflow-hidden" onclick="showPreview('https://i.ibb.co/xqCqJDsv/Retro-Christmas-text-effect-Vintage-grunge-editable-typography.jpg', 'Retro Christmas Vector Editable Text Effect')">
+          <div class="vol-label">CHRISTMAS VOL.2</div>
+          <img src="https://i.ibb.co/xqCqJDsv/Retro-Christmas-text-effect-Vintage-grunge-editable-typography.jpg" class="w-full h-64 object-cover">
+          <div class="p-5"><h3 class="font-semibold">Retro Christmas Vector Editable Text Effect</h3></div>
+        </div>
+
+        <div class="project-card bg-zinc-900 rounded-3xl overflow-hidden" onclick="showPreview('https://i.ibb.co/twKQd0X2/Vintage-Christmas-text-effect-retro-distressed-editable-typography-style.jpg', 'Vintage Christmas Vector Editable Text Effect')">
+          <div class="vol-label">CHRISTMAS VOL.3</div>
+          <img src="https://i.ibb.co/twKQd0X2/Vintage-Christmas-text-effect-retro-distressed-editable-typography-style.jpg" class="w-full h-64 object-cover">
+          <div class="p-5"><h3 class="font-semibold">Vintage Christmas Vector Editable Text Effect</h3></div>
+        </div>
+
+        <div class="project-card bg-zinc-900 rounded-3xl overflow-hidden" onclick="showPreview('https://i.ibb.co/s9MQ4Q5R/Vintage-text-effect-Victorian-editable-typography-style.jpg', 'Victorian Vector Editable Text Effect')">
+          <img src="https://i.ibb.co/s9MQ4Q5R/Vintage-text-effect-Victorian-editable-typography-style.jpg" class="w-full h-64 object-cover">
+          <div class="p-5"><h3 class="font-semibold">Victorian Vector Editable Text Effect</h3></div>
+        </div>
+
+        <div class="project-card bg-zinc-900 rounded-3xl overflow-hidden" onclick="showPreview('https://i.ibb.co/G6f9p7P/Vintage-text-effect-Editable-victorian-text-style.jpg', 'Victorian Vector Editable Text Effect')">
+          <img src="https://i.ibb.co/G6f9p7P/Vintage-text-effect-Editable-victorian-text-style.jpg" class="w-full h-64 object-cover">
+          <div class="p-5"><h3 class="font-semibold">Victorian Vector Editable Text Effect</h3></div>
+        </div>
+
+        <div class="project-card bg-zinc-900 rounded-3xl overflow-hidden" onclick="showPreview('https://i.ibb.co/Mk3tFc1C/Vintage-text-effect-Editable-victorian-style.jpg', 'Victorian Vector Editable Text Effect')">
+          <img src="https://i.ibb.co/Mk3tFc1C/Vintage-text-effect-Editable-victorian-style.jpg" class="w-full h-64 object-cover">
+          <div class="p-5"><h3 class="font-semibold">Victorian Vector Editable Text Effect</h3></div>
+        </div>
+
+        <div class="project-card bg-zinc-900 rounded-3xl overflow-hidden" onclick="showPreview('https://i.ibb.co/Q746MQxq/Vintage-Christmas-Text-Effect-Editable-Ornamental-Holiday-Typography.jpg', 'Ornamental Christmas Vector Editable Text Effect')">
+          <img src="https://i.ibb.co/Q746MQxq/Vintage-Christmas-Text-Effect-Editable-Ornamental-Holiday-Typography.jpg" class="w-full h-64 object-cover">
+          <div class="p-5"><h3 class="font-semibold">Ornamental Christmas Vector Editable Text Effect</h3></div>
+        </div>
+
+        <div class="project-card bg-zinc-900 rounded-3xl overflow-hidden" onclick="showPreview('https://i.ibb.co/5xcHFGgB/Happy-valentine-day-Editable-vintage-text-effect-style.jpg', 'Happy Valentine Vector Editable Text Effect')">
+          <img src="https://i.ibb.co/5xcHFGgB/Happy-valentine-day-Editable-vintage-text-effect-style.jpg" class="w-full h-64 object-cover">
+          <div class="p-5"><h3 class="font-semibold">Happy Valentine Vector Editable Text Effect</h3></div>
+        </div>
+
+        <div class="project-card bg-zinc-900 rounded-3xl overflow-hidden" onclick="showPreview('https://i.ibb.co/3x6K1jG/Happy-valentine-Editable-victorian-style.jpg', 'Valentine Victorian Vector Editable Text Effect')">
+          <img src="https://i.ibb.co/3x6K1jG/Happy-valentine-Editable-victorian-style.jpg" class="w-full h-64 object-cover">
+          <div class="p-5"><h3 class="font-semibold">Valentine Victorian Vector Editable Text Effect</h3></div>
+        </div>
+
+        <div class="project-card bg-zinc-900 rounded-3xl overflow-hidden" onclick="showPreview('https://i.ibb.co/chTpVmGK/Vintage-text-effect-Victorian-editable-text-style.jpg', 'Victorian Vector Editable Text Effect')">
+          <img src="https://i.ibb.co/chTpVmGK/Vintage-text-effect-Victorian-editable-text-style.jpg" class="w-full h-64 object-cover">
+          <div class="p-5"><h3 class="font-semibold">Victorian Vector Editable Text Effect</h3></div>
+        </div>
+
+        <div class="project-card bg-zinc-900 rounded-3xl overflow-hidden" onclick="showPreview('https://i.ibb.co/S4jZLFsg/Victorian-editable-text-effect-decoration-style.jpg', 'Victorian Decoration Vector Editable Text Effect')">
+          <img src="https://i.ibb.co/S4jZLFsg/Victorian-editable-text-effect-decoration-style.jpg" class="w-full h-64 object-cover">
+          <div class="p-5"><h3 class="font-semibold">Victorian Decoration Vector Editable Text Effect</h3></div>
+        </div>
+
+        <div class="project-card bg-zinc-900 rounded-3xl overflow-hidden" onclick="showPreview('https://i.ibb.co/5gfM0jYh/Caribbean-text-effect-Vintage-editable-text-style.jpg', 'Caribbean Vector Editable Text Effect')">
+          <div class="vol-label">CARIBBEAN VOL.1</div>
+          <img src="https://i.ibb.co/5gfM0jYh/Caribbean-text-effect-Vintage-editable-text-style.jpg" class="w-full h-64 object-cover">
+          <div class="p-5"><h3 class="font-semibold">Caribbean Vector Editable Text Effect</h3></div>
+        </div>
+
+        <div class="project-card bg-zinc-900 rounded-3xl overflow-hidden" onclick="showPreview('https://i.ibb.co/60zh71kZ/Vintage-editable-text-effect-victorian-trendy-style.jpg', 'Victorian Trendy Vector Editable Text Effect')">
+          <img src="https://i.ibb.co/60zh71kZ/Vintage-editable-text-effect-victorian-trendy-style.jpg" class="w-full h-64 object-cover">
+          <div class="p-5"><h3 class="font-semibold">Victorian Trendy Vector Editable Text Effect</h3></div>
+        </div>
+
+        <div class="project-card bg-zinc-900 rounded-3xl overflow-hidden" onclick="showPreview('https://i.ibb.co/99PKv7xY/Heritage-text-effect-Vintage-victroian-editable-text-style.jpg', 'Heritage Vector Editable Text Effect')">
+          <div class="vol-label">HERITAGE VOL.3</div>
+          <img src="https://i.ibb.co/99PKv7xY/Heritage-text-effect-Vintage-victroian-editable-text-style.jpg" class="w-full h-64 object-cover">
+          <div class="p-5"><h3 class="font-semibold">Heritage Vector Editable Text Effect</h3></div>
+        </div>
+
+        <div class="project-card bg-zinc-900 rounded-3xl overflow-hidden" onclick="showPreview('https://i.ibb.co/GvSQMVbZ/Vintage-text-effect-Victorian-editable-text-style.jpg', 'Victorian Vector Editable Text Effect')">
+          <img src="https://i.ibb.co/GvSQMVbZ/Vintage-text-effect-Victorian-editable-text-style.jpg" class="w-full h-64 object-cover">
+          <div class="p-5"><h3 class="font-semibold">Victorian Vector Editable Text Effect</h3></div>
+        </div>
+
+        <div class="project-card bg-zinc-900 rounded-3xl overflow-hidden" onclick="showPreview('https://i.ibb.co/6JYyXxc2/Caribbean-text-effect-Vintage-victorian-editable-text-style.jpg', 'Caribbean Vector Editable Text Effect')">
+          <div class="vol-label">CARIBBEAN VOL.2</div>
+          <img src="https://i.ibb.co/6JYyXxc2/Caribbean-text-effect-Vintage-victorian-editable-text-style.jpg" class="w-full h-64 object-cover">
+          <div class="p-5"><h3 class="font-semibold">Caribbean Vector Editable Text Effect</h3></div>
+        </div>
+
+        <div class="project-card bg-zinc-900 rounded-3xl overflow-hidden" onclick="showPreview('https://i.ibb.co/0pvLgTnq/Prestige-text-effect-Vintage-editable-text-style.jpg', 'Prestige Vector Editable Text Effect')">
+          <div class="vol-label">PRESTIGE VOL.3</div>
+          <img src="https://i.ibb.co/0pvLgTnq/Prestige-text-effect-Vintage-editable-text-style.jpg" class="w-full h-64 object-cover">
+          <div class="p-5"><h3 class="font-semibold">Prestige Vector Editable Text Effect</h3></div>
+        </div>
+
+        <div class="project-card bg-zinc-900 rounded-3xl overflow-hidden" onclick="showPreview('https://i.ibb.co/Txdm5j2j/Prestige-editable-text-effect-Victorian-style.jpg', 'Prestige Vector Editable Text Effect')">
+          <div class="vol-label">PRESTIGE VOL.4</div>
+          <img src="https://i.ibb.co/Txdm5j2j/Prestige-editable-text-effect-Victorian-style.jpg" class="w-full h-64 object-cover">
+          <div class="p-5"><h3 class="font-semibold">Prestige Vector Editable Text Effect</h3></div>
+        </div>
+
+        <div class="project-card bg-zinc-900 rounded-3xl overflow-hidden" onclick="showPreview('https://i.ibb.co/8GTDftc/Heritage-editable-text-effect-Vintage-victorian-trendy-style.jpg', 'Heritage Vector Editable Text Effect')">
+          <div class="vol-label">HERITAGE VOL.4</div>
+          <img src="https://i.ibb.co/8GTDftc/Heritage-editable-text-effect-Vintage-victorian-trendy-style.jpg" class="w-full h-64 object-cover">
+          <div class="p-5"><h3 class="font-semibold">Heritage Vector Editable Text Effect</h3></div>
+        </div>
+
+        <div class="project-card bg-zinc-900 rounded-3xl overflow-hidden" onclick="showPreview('https://i.ibb.co/Q3FCX9Tx/Victorian-text-effect-Decoration-editable-text-style.jpg', 'Victorian Decoration Vector Editable Text Effect')">
+          <img src="https://i.ibb.co/Q3FCX9Tx/Victorian-text-effect-Decoration-editable-text-style.jpg" class="w-full h-64 object-cover">
+          <div class="p-5"><h3 class="font-semibold">Victorian Decoration Vector Editable Text Effect</h3></div>
+        </div>
+
+        <div class="project-card bg-zinc-900 rounded-3xl overflow-hidden" onclick="showPreview('https://i.ibb.co/R4pC6Gw9/Heritage-decoration-text-effect-Victorian-editable-text-style.jpg', 'Heritage Decoration Vector Editable Text Effect')">
+          <img src="https://i.ibb.co/R4pC6Gw9/Heritage-decoration-text-effect-Victorian-editable-text-style.jpg" class="w-full h-64 object-cover">
+          <div class="p-5"><h3 class="font-semibold">Heritage Decoration Vector Editable Text Effect</h3></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- MODAL PREVIEW -->
+  <div id="previewModal" class="modal">
+    <div class="max-w-4xl w-full mx-4 bg-zinc-900 rounded-3xl overflow-hidden">
+      <div class="p-4 flex justify-end">
+        <button onclick="closePreview()" class="text-white text-4xl hover:text-yellow-400">✕</button>
+      </div>
+      <img id="modalImage" class="w-full max-h-[65vh] object-contain bg-black" alt="">
+      <div class="p-8">
+        <h2 id="modalTitle" class="text-3xl font-bold mb-4"></h2>
+        <p class="text-gray-400 mb-8">
+          By downloading this file, you'll receive an EPS format that allows you to customize the text, colors, and effects to your liking.<br><br>
+          It only supports customization in Adobe Illustrator; otherwise, you can't edit the image.
+        </p>
+        <a id="downloadBtn" href="https://stock.adobe.com/uk/contributor/211568734/pandawa-std" target="_blank" 
+           class="block text-center bg-yellow-400 hover:bg-yellow-300 text-black font-bold py-4 rounded-2xl text-lg">
+          Download on Adobe Stock →
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <footer class="py-10 text-center text-gray-500">
+    © 2026 Pandawa Studio
+  </footer>
+
+  <script>
+    function showPreview(imgSrc, title) {
+      document.getElementById('modalImage').src = imgSrc;
+      document.getElementById('modalTitle').textContent = title;
+      document.getElementById('previewModal').style.display = 'flex';
+    }
+
+    function closePreview() {
+      document.getElementById('previewModal').style.display = 'none';
+    }
+  </script>
+</body>
+</html>
